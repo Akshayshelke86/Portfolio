@@ -1,32 +1,49 @@
-# React + TypeScript + Vite
+# Akshay Shelke — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio site for **Akshay Shelke**, Java Full Stack Developer.
 
-Currently, two official plugins are available:
+**Live:** [akshayshelke.in](https://akshayshelke.in)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+A single-page portfolio built with React, TypeScript, and Tailwind CSS, covering skills, featured projects, professional experience, and certifications, plus a small built-in chat assistant that answers visitor questions using only the information on the site.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- **React 19** + **TypeScript**
+- **Vite** — build tooling
+- **Tailwind CSS v4** — styling
+- **Framer Motion** — animations
+- **react-icons** / **lucide-react** — icons
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Getting Started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev      # start the dev server
+npm run build    # production build
+npm run lint     # lint the codebase
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Project Structure
+
+```
+src/
+  components/   # reusable UI, layout, and chatbot components
+  sections/     # page sections (Hero, Projects, Skills, Experience, ...)
+  data/         # site content — edit this to update text, projects, skills, etc.
+  hooks/        # theme, scroll, and other custom hooks
+  utils/        # small shared helpers
+```
+
+To update any content on the site (name, projects, skills, experience, links), edit the files in `src/data/`.
+
+## Deployment
+
+Deployed automatically to GitHub Pages via GitHub Actions on every push to `main` (see `.github/workflows/deploy.yml`), served from the custom domain `akshayshelke.in`.
+
+## Contact
+
+- Email: akshayshelk86@gmail.com
+- LinkedIn: [akshay-shelke-883038236](https://www.linkedin.com/in/akshay-shelke-883038236/)
+- GitHub: [@Akshayshelke86](https://github.com/Akshayshelke86)
