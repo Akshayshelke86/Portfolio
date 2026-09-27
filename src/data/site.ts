@@ -191,6 +191,23 @@ export const projects: Project[] = [
     categories: ['Full Stack'],
     links: [{ label: 'Live Demo', url: 'https://aaryainnovtech.com/expense' }],
   },
+  {
+    slug: 'civisense',
+    name: 'CiviSense — Civic Engagement Platform',
+    description:
+      'A civic reporting platform for Maharashtra that lets citizens report municipal issues like potholes and waste management, track resolutions in real time, and view reports on an interactive map.',
+    bullets: [
+      'Built location-based issue reporting with a Leaflet map geofenced to Maharashtra, with photo uploads and real-time status tracking.',
+      'Built an admin dashboard for managing and prioritizing reports, with duplicate filtering and CSV export.',
+      'Implemented JWT-based auth with role-based access control, Helmet, and rate limiting on all API endpoints.',
+    ],
+    techStack: ['React', 'Vite', 'Leaflet', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+    categories: ['Full Stack'],
+    links: [
+      { label: 'Live Demo', url: 'https://civisense24.netlify.app/' },
+      { label: 'GitHub', url: 'https://github.com/Akshayshelke86/CiviSense' },
+    ],
+  },
 ]
 
 export const certifications: Certification[] = [
