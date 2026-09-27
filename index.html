@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          if (stored === 'light' || stored === 'dark') {
+            document.documentElement.setAttribute('data-theme', stored);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1f1f1f" />
+
+    <title>Akshay Shelke | Java Full Stack Developer</title>
+    <meta name="description" content="Akshay Shelke is a Java Full Stack Developer building and deploying web and IoT applications with React.js, Node.js, Java, Spring Boot, MySQL, MongoDB, REST APIs, and AWS." />
+    <meta name="author" content="Akshay Shelke" />
+    <meta name="keywords" content="Akshay Shelke, Java Full Stack Developer, React Developer, Spring Boot Developer, Node.js Developer, Software Engineer Nashik" />
+    <link rel="canonical" href="https://akshayshelke.in/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akshayshelke.in/" />
+    <meta property="og:title" content="Akshay Shelke | Java Full Stack Developer" />
+    <meta property="og:description" content="Java Full Stack Developer building and deploying web and IoT applications with React.js, Node.js, Java, Spring Boot, MySQL, MongoDB, REST APIs, and AWS." />
+    <meta property="og:image" content="https://akshayshelke.in/og-image.png" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Akshay Shelke | Java Full Stack Developer" />
+    <meta name="twitter:description" content="Java Full Stack Developer building and deploying web and IoT applications with React.js, Node.js, Java, Spring Boot, MySQL, MongoDB, REST APIs, and AWS." />
+    <meta name="twitter:image" content="https://akshayshelke.in/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Akshay Shelke",
+        "jobTitle": "Java Full Stack Developer",
+        "url": "https://akshayshelke.in/",
+        "email": "mailto:akshayshelk86@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nashik",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/akshay-shelke-883038236/",
+          "https://github.com/Akshayshelke86",
+          "https://leetcode.com/u/Akshay9284/",
+          "https://www.hackerrank.com/profile/akshayshelk86"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
