@@ -177,6 +177,20 @@ export const projects: Project[] = [
     categories: ['Frontend'],
     links: [{ label: 'Live Demo', url: 'https://aaryainnovtech.com' }],
   },
+  {
+    slug: 'asems-expense-management',
+    name: 'ASEMS — Site Expense Management System',
+    description:
+      'A role-based web app for tracking money and progress on on-site installation projects — site supervisors log field expenses, Operations approves them, Accounts verifies and pays, and Admin has full oversight.',
+    bullets: [
+      'Built a 4-role workflow (Admin, Operations, Accounts, Site Supervisor) with a public no-login quick-expense form for field use.',
+      'Backend built with Node.js, Express, and Prisma over MySQL, with JWT authentication and role-based access control.',
+      'Integrated AWS S3 for bill/receipt uploads, with rate limiting, Helmet, and input validation for production security.',
+    ],
+    techStack: ['React', 'Vite', 'Node.js', 'Express.js', 'Prisma', 'MySQL', 'AWS S3', 'JWT'],
+    categories: ['Full Stack'],
+    links: [{ label: 'Live Demo', url: 'https://aaryainnovtech.com/expense' }],
+  },
 ]
 
 export const certifications: Certification[] = [
